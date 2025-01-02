@@ -1,14 +1,19 @@
 import 'dart:io';
+void main (){
 
-void main() {
-  // //Write a program to display a pattern like a right angle triangle with a
-///number using loop.
-  int rows = 4; // Number of rows for the pattern
-  
-  for (int i = 1; i <= rows; i++) {
-    for (int j = 1; j <= i; j++) {
-      stdout.write(i);
+bool login = false;
+  while (login == false) {
+    stdout.write("Please input the email: ");
+    var email = stdin.readLineSync()!;
+    
+    stdout.write("Please input the password: ");
+    var password = stdin.readLineSync()!;
+    
+    if (email == "abdullah@gmail.com" && password == "5612") { // Removed the semicolon here
+      print("Login successful");
+      login = true;
+    } else {
+      print("Login failed");
     }
-    print('');
   }
 }
