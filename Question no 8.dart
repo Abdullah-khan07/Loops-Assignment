@@ -1,4 +1,6 @@
 void main() {
+  //Implement a code that finds the average of all the negative numbers in
+////a list using a for loop and if-else condition.
   List<int> numbers = [10, -3, 20, -15, 30, -25, 40]; 
   int negativeSum = 0; 
   int negativeCount = 0; 
